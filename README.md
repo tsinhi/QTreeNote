@@ -1,2 +1,1 @@
-# QTreeNote
-A simple note
+#QTreeNote

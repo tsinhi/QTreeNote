@@ -1,0 +1,77 @@
+
+[
+	{
+		"actionName": "Home",
+		"icon": ":/icons/home.png",
+		"size": 32,
+		"styleSheet": "border:none",
+		"geometry": [
+			10,
+			4,
+			32,
+			32
+		],
+		"action": "actionHomePage()"
+	},
+	
+	{
+		"actionName": "Edit",
+		"icon": ":/icons/edit.png",
+		"size": 32,
+		"styleSheet": "border:none",
+		"geometry": [
+			50,
+			4,
+			32,
+			32
+		],
+		"action": "actionEnableEdit()"
+	},
+	{
+		"actionName": "Add",
+		"icon": ":/icons/add.png",
+		"size": 32,
+		"styleSheet": "border:none",
+		"geometry": [
+			90,
+			4,
+			32,
+			32
+		],
+		"action": "actionAddNote()"
+	},	
+	
+	{
+		"actionName": "Delete",
+		"icon": ":/icons/del.png",
+		"size": 32,
+		"styleSheet": "border:none",
+		"geometry": [
+			130,
+			4,
+			32,
+			32
+		],
+		"action": "actionDelNote()"
+	},	
+	
+	{
+		"actionName": "Save",
+		"icon": ":/icons/save.png",
+		"size": 32,
+		"styleSheet": "border:none",
+		"geometry": [
+			170,
+			4,
+			32,
+			32
+		],
+		"action": "actionSaveNote()"
+	}
+]
+
+
+
+
+
+

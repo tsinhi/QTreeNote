@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Full Editor - Quill Rich Text Editor</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="language" content="english">
+<meta name="viewport" content="width=device-width">
+
+
+
+<link rel="stylesheet" href="../quill.snow.css" />
+
+
+
+</head>
+<body>
+<div id="editor-container">
+<blockquote>aaa</blockquote>
+</div>
+<script src="../quill.min.js"></script>
+
+<script>
+  var quill = new Quill('#editor-container', {
+	scrollingContainer: '#scrolling-container',
+    theme: 'snow'
+  });
+  var Image = Quill.import('formats/image');
+	Image.sanitize = function(url) {
+		console.log("test function");
+	    console.log(url);
+		return url; // You can modify the URL here
+	};
+	
+	quill.insertHTML = (html) => {
+  const range = this.quill.getSelection(true),
+    date = Date.now();
+
+  //quill.insertEmbed(range.index, 'div', { id: date }, 'user');
+  //quill.setSelection(range.index + 1, Quill.sources.SILENT);
+  //$(html).insertAfter('#' + date);
+  //$('#' + date).remove();
+};
+	
+	
+</script>
+
+  
+
+
+
+</body>
+</html>
